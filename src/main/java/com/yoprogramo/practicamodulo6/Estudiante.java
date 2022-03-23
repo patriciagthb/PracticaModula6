@@ -2,6 +2,7 @@
 package com.yoprogramo.practicamodulo6;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Estudiante extends Persona {
     
@@ -11,11 +12,13 @@ public class Estudiante extends Persona {
     public Estudiante() {
     }
 
-    public Estudiante(int nroEstudiante, String moduloActual, String nombre, LocalDate fechaNacimiento) {
-        super(nombre, fechaNacimiento);
+    public Estudiante(int nroEstudiante, String moduloActual, String nombre, ArrayList experienciaLaboral, LocalDate fechaNacimiento) {
+        super(nombre, experienciaLaboral, fechaNacimiento);
         this.nroEstudiante = nroEstudiante;
         this.moduloActual = moduloActual;
     }
+
+
 
     public int getNroEstudiante() {
         return nroEstudiante;
